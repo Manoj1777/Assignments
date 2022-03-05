@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="col-md-5"></div>
+<div class="col-md-4">
+<form method="post" class="from-group" th:action="@{}" method="post" th:object="${admin}">
+
+<label>Input Type</label>
+<input type="number" name="admin"  class="from-control">
+
+
+
+<label>username</label>
+<input type="username" name="user"  class="from-control">
+
+<label>password</label>
+<input type="password" name="user"  class="from-control" >
+
+<label>address</label>
+<input type="text" name="user"  class="from-control">
+
+<label>mobileno</label>
+<input type="number" name="user"  class="from-control">
+
+<label>Email</label>
+<input type="email" name="user"  class="from-control">
+
+
+</form>
+</div>
+</body>
+</html>
